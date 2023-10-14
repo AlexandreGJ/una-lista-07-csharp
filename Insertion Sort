@@ -1,6 +1,6 @@
-       int[] numeros = { 1, 100, 30, 50, 11, 13, 5, 7, 78 };
+    int[] numeros = { 1, 100, 30, 50, 11, 13, 5, 7, 78 };
 
-    Console.WriteLine("Vetor original:");
+    Console.WriteLine("Numeros iniciais:");
 
 
     ImprimirVetor(numeros);
@@ -9,7 +9,7 @@
 
     InsertionSort(numeros);
 
-    Console.WriteLine("\nVetor ordenado :");
+    Console.WriteLine("\nNumeros ordenados :");
     ImprimirVetor(numeros);
 
     Console.ReadLine();
