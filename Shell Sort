@@ -1,6 +1,6 @@
     int[] numeros = { 1, 100, 30, 50, 11, 13, 5, 7, 78 };
 
-    Console.WriteLine("Numeros original:");
+    Console.WriteLine("Numeros iniciais:");
     ImprimirVetor(numeros);
 
     ShellSort(numeros);
