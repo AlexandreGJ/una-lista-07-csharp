@@ -1,45 +1,45 @@
-    int[] vetor = { 1, 100, 30, 50, 11, 13, 5, 7, 78 };
+       int[] numeros = { 1, 100, 30, 50, 11, 13, 5, 7, 78 };
 
     Console.WriteLine("Vetor original:");
-   
-   
-    ImprimirVetor(vetor);
 
-     
 
-    InsertionSort(vetor);
+    ImprimirVetor(numeros);
+
+
+
+    InsertionSort(numeros);
 
     Console.WriteLine("\nVetor ordenado :");
-    ImprimirVetor(vetor);
+    ImprimirVetor(numeros);
 
-    Console.ReadLine(); 
+    Console.ReadLine();
 
 }
-       
-static void InsertionSort(int[] vetor)
+
+static void InsertionSort(int[] numeros)
 {
-    int n = vetor.Length;
+    int n = numeros.Length;
     for (int i = 1; i < n; i++)
     {
-        int key = vetor[i];
+        int key = numeros[i];
         int j = i - 1;
 
-        while (j >= 0 && vetor[j] > key)
+        while (j >= 0 && numeros[j] > key)
         {
-            vetor[j + 1] = vetor[j];
+            numeros[j + 1] = numeros[j];
             j--;
         }
 
-        vetor[j + 1] = key;
+        numeros[j + 1] = key;
     }
 }
 
 static void ImprimirVetor(int[] vetor)
 {
-   
+
     foreach (int elemento in vetor)
     {
         Console.Write(elemento + " ");
     }
-       
-    }
+
+}
